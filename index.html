@@ -1,0 +1,95 @@
+Declares to the browser this is an HTML document.
+<!DOCTYPE html>
+<!--Start the HTML page and sets the lang to English-->
+<html lang="en">
+<!--Head tag is used to include the meta tags 
+    and links to the javaScript code page.-->
+    <head>
+        <!--Title of the tab at the top of the page-->
+        <title>Space Casino</title>
+        <!--Add a space background-->
+        <!--CSS information here-->
+    <style>
+        /*CSS code here*/
+        body {
+            background-image: url("space.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+        /* changes back ground image and makes text align to the center, as well as making the font color white */
+
+        h1 {
+            text-align: center;
+            font-size: 75px;
+        }
+        /* for h1 tags it makes it centered */
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+        /* for h2 tags it makes it centered */
+
+        p {
+            text-align: left;
+            font-size: x-large;
+        }
+
+        /* for p tags it makes it align left with a large font size */
+
+        #theFinalCountdown {
+            text-align: center;
+            font-size: xx-large;
+        }
+        /* for id tags of theFinalCountdown tags it makes it centered */
+
+        button {
+            background-color: white;
+            color: green;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 42px;
+            font-weight: bold;
+            align-self: center;
+        }
+        /* button tags have this set of css */
+
+        button:hover {
+            background-color: transparent;
+            border: 2px solid #4CAF50;
+            color: white;
+        }
+        /* button tags change on hover */
+    </style>        
+        <!--links to the javaScript code page-->
+        <script src="JavaScriptCode.js">      
+        </script> 
+        <!-- where the js is linked -->
+    </head>
+    <!--Body tag is used to include the background image and 
+        the text for the header of the page.-->
+    <body>
+        <h1>Space Casino</h1>
+        <h2>Where the odds are in your favor</h2>  
+        <button onclick="play()">Roll</button>    
+        <img src="insidecasino.jpg" alt="Inside Casino" width="500" height="333">
+        <script>
+            displayWelcome();
+            displayInstructions();
+            document.write("Space Game");
+            document.write("<br/><br/><br/>");
+            play();
+            // here more of the js is linked
+        </script>
+        <br/><br/><br/>
+    </body>
+
+</html>
